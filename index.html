@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Final - Computación Moderna</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <script src="//code.tidio.co/1a6warvdwnxthwids12kr8o4khwzpcip.js" async></script>
+</head>
+<body>
+
+  <header>
+    <h1>Computación Moderna</h1>
+    <nav>
+      <button onclick="mostrarSeccion('generaciones')">Generaciones</button>
+      <button onclick="mostrarSeccion('arquitectura')">Arquitectura</button>
+      <button onclick="mostrarSeccion('bases')">Base de Datos</button>
+      <button onclick="mostrarSeccion('redes')">Redes</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Contenedor de Bienvenida -->
+    <div id="bienvenida">
+      <h2>Bienvenido al Proyecto Final de Introducción a los sistemas de computo</h2>
+      <p>En este proyecto exploraremos los conceptos fundamentales de la computación, incluyendo las generaciones de computadoras, la arquitectura de sistemas, bases de datos y redes de computadoras.</p>
+      <p>Utiliza el menú de navegación para acceder a las diferentes secciones del proyecto.</p>
+    </div>
+
+    <!-- Sección de Generaciones de Computadoras -->
+    <section id="generaciones" class="bloque" style="display: none;">
+      <h2>Generaciones de Computadoras</h2>
+      <p>Las computadoras han evolucionado a lo largo del tiempo, pasando por distintas generaciones que han marcado avances tecnológicos significativos.</p>
+      <ul>
+        <li><strong>Primera generación (1940-1956):</strong> Uso de válvulas de vacío, programación en lenguaje máquina.</li>
+        <!--imagen-->
+        <img src="https://th.bing.com/th/id/OIP.wrjN_FzMnE-eXTxVpsoR9gHaFo?rs=1&pid=ImgDetMain" alt="ENIAC" style="width: 300px; height: auto;">
+        <li><strong>Segunda generación (1956-1963):</strong> Introducción de transistores, reducción de tamaño y consumo.</li>
+        <img src="https://img.freepik.com/fotos-premium/triunfo-transistor-era-que-dispositivos-mas-pequenos-revolucionan-salas-computadoras-concepto-revolucion-computadora-miniaturizacion-tecnologia-transistores-dispositivos-innovadores-tecnologia-siglo-xx_918839-32002.jpg" alt="computadora de transistores" style="width: 300px; height: auto;">
+        <li><strong>Tercera generación (1963-1971):</strong> Circuitos integrados, computadoras más rápidas y accesibles.</li>
+        <img src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/12790442/4.jpg" alt="circuitos integrados" style="width: 280spx; height: 180px;"><img src="https://th.bing.com/th/id/OIP.eRNaAvfpSrEkpM3_mJdhIwHaEv?rs=1&pid=ImgDetMain" alt="circuitos integrados" style="width: 280px; height: 180px;">
+        <li><strong>Cuarta generación (1971-1982):</strong> Microprocesadores, inicio de las computadoras personales.</li>
+        <img src="https://http2.mlstatic.com/D_NQ_NP_727077-MLM44024016292_112020-F.jpg" alt="microprocesadores" style="width: 300px; height: auto;">
+        <li><strong>Quinta generación (1982 - actualidad):</strong> Inteligencia artificial, redes informáticas y computación avanzada.</li>
+        <img src="https://i.pinimg.com/originals/9b/f4/de/9bf4de40c7487130b7477d8b544b2862.jpg" alt="inteligencia artificial" style="width: 300px; height: auto;">
+        <li><strong>Sexta generación (futuro):</strong> Computación cuántica, robótica avanzada y nanotecnología.</li>
+        <img src="https://i0.wp.com/sonria.com/wp-content/uploads/2019/10/quantum640.jpg?ssl=1" alt="computación cuántica" style="width: 300px; height: auto;">
+
+      </ul>
+    </section>
+
+    <!-- Sección de Arquitectura de Computadoras -->
+    <section id="arquitectura" class="bloque" style="display: none;">
+      <h2>Arquitectura de Computadoras</h2>
+      <p>La arquitectura de una computadora define su estructura interna y cómo procesa la información.</p>
+      <ul>
+        <li><strong>Modelo Von Neumann:</strong> Organización clásica con CPU, memoria y dispositivos de entrada/salida.</li>
+        <li><strong>Arquitectura Harvard:</strong> Separación de memoria de datos e instrucciones para mayor velocidad.</li>
+        <li><strong>Componentes principales:</strong> CPU, RAM, almacenamiento, buses de datos y dispositivos de entrada/salida.</li>
+      </ul>
+    </section>
+
+    <!-- Sección de Base de Datos -->
+    <section id="bases" class="bloque" style="display: none;">
+      <h2>Base de Datos</h2>
+      <p>Las bases de datos permiten almacenar y gestionar información de manera eficiente.</p>
+      <ul>
+        <li><strong>Bases de datos relacionales:</strong> Uso de tablas y SQL para organizar datos.</li>
+        <li><strong>Bases de datos NoSQL:</strong> Mayor flexibilidad y escalabilidad para grandes volúmenes de datos.</li>
+        <li><strong>Bases de datos distribuidas:</strong> Información almacenada en múltiples servidores.</li>
+      </ul>
+    </section>
+
+    <!-- Sección de Redes de Computadoras -->
+    <section id="redes" class="bloque" style="display: none;">
+      <h2>Redes de Computadoras</h2>
+      <p>Las redes permiten la comunicación entre dispositivos y el intercambio de información.</p>
+      <ul>
+        <li><strong>Redes LAN:</strong> Conexión de dispositivos en un área local.</li>
+        <li><strong>Redes WAN:</strong> Conexión de redes a nivel global, incluyendo Internet.</li>
+        <li><strong>Protocolos de comunicación:</strong> TCP/IP, HTTP/HTTPS, FTP, SMTP.</li>
+        <li><strong>Componentes de una red:</strong> Router, switch, firewall, servidor.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Proyecto Final - Introducción a los sistemas de computo - <strong>Aaron Franco</strong></p>
+  </footer>
+
+</body>
+</html>
