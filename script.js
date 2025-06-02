@@ -16,4 +16,5 @@ function mostrarSeccion(seccion) {
   if (seccionMostrada) {
     seccionMostrada.style.display = 'block';
   }
+
 }

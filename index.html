@@ -11,8 +11,9 @@
 <body>
 
   <header>
-    <h1>Computación Moderna</h1>
+    <h1>INTRODUCCION A LOS SISTEMAS DE COMPUTO</h1>
     <nav>
+      <button onclick="mostrarSeccion('inicio')">Inicio</button>
       <button onclick="mostrarSeccion('generaciones')">Generaciones</button>
       <button onclick="mostrarSeccion('arquitectura')">Arquitectura</button>
       <button onclick="mostrarSeccion('bases')">Base de Datos</button>
@@ -22,11 +23,13 @@
 
   <main>
     <!-- Contenedor de Bienvenida -->
-    <div id="bienvenida">
+    <div id="inicio">
       <h2>Bienvenido al Proyecto Final de Introducción a los sistemas de computo</h2>
       <p>En este proyecto exploraremos los conceptos fundamentales de la computación, incluyendo las generaciones de computadoras, la arquitectura de sistemas, bases de datos y redes de computadoras.</p>
       <p>Utiliza el menú de navegación para acceder a las diferentes secciones del proyecto.</p>
     </div>
+    
+    
 
     <!-- Sección de Generaciones de Computadoras -->
     <section id="generaciones" class="bloque" style="display: none;">
@@ -56,7 +59,9 @@
       <p>La arquitectura de una computadora define su estructura interna y cómo procesa la información.</p>
       <ul>
         <li><strong>Modelo Von Neumann:</strong> Organización clásica con CPU, memoria y dispositivos de entrada/salida.</li>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SxFG18C4gXQ?si=QwyU6uvHCHdkyq75" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <li><strong>Arquitectura Harvard:</strong> Separación de memoria de datos e instrucciones para mayor velocidad.</li>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wBTYlCpBEJQ?si=d7WaLQIH2F724PhX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <li><strong>Componentes principales:</strong> CPU, RAM, almacenamiento, buses de datos y dispositivos de entrada/salida.</li>
       </ul>
     </section>
@@ -66,9 +71,60 @@
       <h2>Base de Datos</h2>
       <p>Las bases de datos permiten almacenar y gestionar información de manera eficiente.</p>
       <ul>
-        <li><strong>Bases de datos relacionales:</strong> Uso de tablas y SQL para organizar datos.</li>
-        <li><strong>Bases de datos NoSQL:</strong> Mayor flexibilidad y escalabilidad para grandes volúmenes de datos.</li>
-        <li><strong>Bases de datos distribuidas:</strong> Información almacenada en múltiples servidores.</li>
+        <div class="container">
+        <h1>Bases de Datos Relacionales</h1>
+        
+        <h2>Características principales:</h2>
+        <ul>
+            <li><strong>Estructura tabular:</strong> La información se organiza en tablas con filas y columnas.</li>
+            <li><strong>Integridad referencial:</strong> Se mantienen relaciones entre tablas a través de claves que garantizan la coherencia de los datos.</li>
+            <li><strong>Uso de SQL:</strong> Se gestionan mediante el lenguaje de consulta estructurado (SQL) para realizar búsquedas, modificaciones y análisis de datos.</li>
+            <li><strong>Escalabilidad y seguridad:</strong> Son robustas para manejar grandes volúmenes de información con mecanismos de protección como restricciones y permisos.</li>
+        </ul>
+
+        <h2>Ejemplos de bases de datos relacionales:</h2>
+        <ul>
+            <li><strong>MySQL</strong></li>
+            <li><strong>PostgreSQL</strong></li>
+            <li><strong>Oracle Database</strong></li>
+            <li><strong>Microsoft SQL Server</strong></li>
+        </ul>
+
+        <p class="footer">Las bases de datos relacionales son ampliamente utilizadas en aplicaciones empresariales, financieras y de comercio electrónico.</p>
+    </div>        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CBVp8sbo1w0?si=A2D8lxl75bEizX2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="container">
+        <h1>Bases de Datos NoSQL</h1>
+        
+        <h2>Características principales:</h2>
+        <ul>
+            <li><strong>Estructuras flexibles:</strong> Pueden almacenar datos en documentos, grafos, claves-valor o columnas, según el tipo de NoSQL utilizado.</li>
+            <li><strong>Escalabilidad horizontal:</strong> Permiten distribuir datos entre varios servidores para mejorar rendimiento y capacidad.</li>
+            <li><strong>Alta disponibilidad:</strong> Diseñadas para mantener acceso rápido y eficiente a la información, incluso con grandes cargas de datos.</li>
+            <li><strong>Sin esquema fijo:</strong> No requieren una estructura rígida de tablas, lo que facilita la adaptación a cambios en los datos.</li>
+        </ul>
+
+        <h2>Tipos de bases de datos NoSQL:</h2>
+        <ul>
+            <li><strong>Basadas en documentos:</strong> Como MongoDB, almacenan información en formato JSON o BSON.</li>
+            <li><strong>Clave-valor:</strong> Como Redis, utilizan pares de clave y valor para un acceso ultrarrápido.</li>
+            <li><strong>Columnar:</strong> Como Apache Cassandra, organizan datos por columnas en lugar de filas.</li>
+            <li><strong>Grafos:</strong> Como Neo4j, ideales para representar relaciones complejas entre datos.</li>
+        </ul>
+
+        <p class="footer">Las bases de datos NoSQL son fundamentales para sistemas modernos, proporcionando flexibilidad y alto rendimiento.</p>
+    </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Zdlude8l8w4?si=wWxQbzAEM5eIJO07" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         <h1>Bases de Datos Distribuidas</h1>
+        <ul>
+            <li><strong>Fragmentación:</strong> Los datos pueden dividirse y almacenarse en diferentes ubicaciones según criterios como la carga de trabajo o la proximidad a los usuarios.</li>
+            <li><strong>Replicación:</strong> Se crean copias de los datos en varios servidores para mejorar la disponibilidad y la tolerancia a fallos.</li>
+            <li><strong>Autonomía:</strong> Cada nodo de la red puede operar de manera independiente, lo que facilita la gestión y mantenimiento de los datos.</li>
+        </ul>
+        <p class="footer">Estos sistemas son muy utilizados en aplicaciones modernas como servicios en la nube, redes sociales y sistemas financieros, donde la rapidez y disponibilidad de los datos son fundamentales.</p>
+    </div>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7p-1VsXKqfo?si=BdH2Ttx3MKCqTCwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </ul>
     </section>
 
@@ -77,10 +133,86 @@
       <h2>Redes de Computadoras</h2>
       <p>Las redes permiten la comunicación entre dispositivos y el intercambio de información.</p>
       <ul>
-        <li><strong>Redes LAN:</strong> Conexión de dispositivos en un área local.</li>
-        <li><strong>Redes WAN:</strong> Conexión de redes a nivel global, incluyendo Internet.</li>
-        <li><strong>Protocolos de comunicación:</strong> TCP/IP, HTTP/HTTPS, FTP, SMTP.</li>
-        <li><strong>Componentes de una red:</strong> Router, switch, firewall, servidor.</li>
+        <div class="container">
+        <h1>Redes LAN</h1>
+        
+        <h2>Descripción:</h2>
+        <p>Las redes LAN (Local Area Network) son redes informáticas que conectan dispositivos dentro de un área geográfica limitada, como una oficina, un hogar o un edificio. Su propósito es permitir la comunicación y el intercambio de datos entre computadoras, impresoras, servidores y otros dispositivos dentro de un mismo entorno.</p>
+
+        <h2>Características principales:</h2>
+        <ul>
+            <li><strong>Cobertura limitada:</strong> Se extiende a espacios pequeños, como una empresa o una escuela.</li>
+            <li><strong>Alta velocidad:</strong> Permite una transmisión de datos rápida debido a la proximidad de los dispositivos.</li>
+            <li><strong>Interconexión de dispositivos:</strong> Facilita la comunicación entre computadoras, impresoras y otros dispositivos.</li>
+            <li><strong>Seguridad y control:</strong> Se pueden implementar medidas de seguridad como firewalls y autenticación de usuarios.</li>
+        </ul>
+
+        <p class="footer">Las redes LAN son fundamentales en entornos empresariales y educativos, ya que permiten compartir recursos y mejorar la eficiencia en la comunicación.</p>
+    </div>
+        <div class="container">
+        <h1>Redes WAN</h1>
+        
+        <h2>Descripción:</h2>
+        <p>Las redes WAN (Wide Area Network) son un tipo de red informática que permite la conexión de dispositivos en una zona geográfica extensa, como una ciudad, un país o incluso a nivel global. Su función principal es interconectar dispositivos y redes de distintas ubicaciones, facilitando la transferencia de información, voz y video.</p>
+
+        <h2>Características principales:</h2>
+        <ul>
+            <li><strong>Cobertura amplia:</strong> Se extiende a grandes distancias, conectando múltiples ubicaciones.</li>
+            <li><strong>Interconexión de redes:</strong> Permite la comunicación entre redes locales (LAN) y otros sistemas distribuidos.</li>
+            <li><strong>Uso de tecnologías avanzadas:</strong> Emplea fibra óptica, satélites y enlaces de alta velocidad para la transmisión de datos.</li>
+            <li><strong>Seguridad y gestión:</strong> Implementa protocolos de seguridad y administración para garantizar la integridad de la información.</li>
+        </ul>
+
+        <p class="footer">Las redes WAN son esenciales para empresas, instituciones gubernamentales y proveedores de servicios de Internet, ya que permiten la conectividad global y el acceso remoto a recursos compartidos.</p>
+    </div>
+        <div class="container">
+        <h1>Protocolos de Comunicación en Redes</h1>
+        
+        <h2>Descripción:</h2>
+        <p>Los protocolos de comunicación en redes son un conjunto de reglas y estándares que permiten la transmisión de datos entre dispositivos conectados a una red. Estos protocolos aseguran que la información se envíe, reciba y procese correctamente, garantizando la interoperabilidad entre distintos sistemas y tecnologías.</p>
+
+        <h2>Características principales:</h2>
+        <ul>
+            <li><strong>Estandarización:</strong> Definen cómo los dispositivos deben comunicarse para evitar errores en la transmisión.</li>
+            <li><strong>Seguridad:</strong> Algunos protocolos incluyen mecanismos de cifrado y autenticación para proteger los datos.</li>
+            <li><strong>Eficiencia:</strong> Optimizan la transferencia de información para reducir latencias y mejorar el rendimiento de la red.</li>
+            <li><strong>Compatibilidad:</strong> Permiten que diferentes dispositivos y sistemas operativos se comuniquen sin problemas.</li>
+        </ul>
+
+        <h2>Ejemplos de protocolos de comunicación:</h2>
+        <ul>
+            <li><strong>TCP/IP:</strong> Base de la comunicación en Internet, garantiza la entrega de datos de manera confiable.</li>
+            <li><strong>HTTP/HTTPS:</strong> Utilizados para la transferencia de información en la web.</li>
+            <li><strong>FTP:</strong> Facilita la transferencia de archivos entre servidores y clientes.</li>
+            <li><strong>DNS:</strong> Traduce nombres de dominio en direcciones IP.</li>
+            <li><strong>SMTP/IMAP/POP3:</strong> Protocolos para el envío y recepción de correos electrónicos.</li>
+        </ul>
+
+        <p class="footer">Estos protocolos son fundamentales para el funcionamiento de redes locales (LAN), redes de área amplia (WAN) e Internet.</p>
+    </div>
+        <div class="container">
+        <h1>Componentes de una Red</h1>
+        
+        <h2>Descripción:</h2>
+        <p>Los componentes de una red son los elementos esenciales que permiten la comunicación y el intercambio de datos entre dispositivos conectados. Se pueden clasificar en varias categorías.</p>
+
+        <h2>1. Dispositivos de red:</h2>
+        <ul>
+            <li><strong>Router:</strong> Dirige el tráfico entre redes y permite la conexión a Internet.</li>
+            <li><strong>Switch:</strong> Conecta múltiples dispositivos dentro de una misma red local (LAN).</li>
+            <li><strong>Hub:</strong> Similar al switch, pero menos eficiente en la distribución de datos.</li>
+            <li><strong>Firewall:</strong> Protege la red contra accesos no autorizados y amenazas externas.</li>
+        </ul>
+
+        <h2>2. Medios de transmisión:</h2>
+        <ul>
+            <li><strong>Cableado:</strong> Incluye cables de cobre (Ethernet) y fibra óptica.</li>
+            <li><strong>Wi-Fi:</strong> Permite la conexión inalámbrica entre dispositivos.</li>
+            <li><strong>Bluetooth:</strong> Usado para conexiones de corto alcance.</li>
+        </ul>
+
+        <p class="footer">Estos componentes trabajan juntos para garantizar una comunicación eficiente y segura dentro de una red.</p>
+    </div>
       </ul>
     </section>
   </main>
@@ -91,3 +223,10 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
